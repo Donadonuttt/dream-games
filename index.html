@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>夢幻遊戲樂園</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 添加 PWA 相關標籤 -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>夢幻遊戲樂園</h1>
+        </header>
+
+        <main>
+            <section id="games">
+                <h2>熱門遊戲</h2>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <span class="icon-text">魔</span>
+                        </div>
+                        <div class="game-number">1</div>
+                        <h3>魔法數字冒險</h3>
+                        <button onclick="playNumberGame()">開始遊戲</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <span class="icon-text">花</span>
+                        </div>
+                        <div class="game-number">2</div>
+                        <h3>花園記憶配對</h3>
+                        <button onclick="startMemoryGame()">開始遊戲</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <span class="icon-text">字</span>
+                        </div>
+                        <div class="game-number">3</div>
+                        <h3>魔法打字學院</h3>
+                        <button onclick="startTypingGame()">開始遊戲</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <span class="icon-text">問</span>
+                        </div>
+                        <div class="game-number">4</div>
+                        <h3>少女知識問答</h3>
+                        <button onclick="startQuizGame()">開始遊戲</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <span class="icon-text">彩</span>
+                        </div>
+                        <div class="game-number">5</div>
+                        <h3>彩虹魔法配對</h3>
+                        <button onclick="startColorGame()">開始遊戲</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <span class="icon-text">星</span>
+                        </div>
+                        <div class="game-number">6</div>
+                        <h3>捕捉星星精靈</h3>
+                        <button onclick="startWhackAMole()">開始遊戲</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="#home" class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">首頁</span>
+            </a>
+            <a href="#games" class="nav-item">
+                <span class="nav-icon">🎮</span>
+                <span class="nav-text">遊戲</span>
+            </a>
+            <a href="#profile" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">我的</span>
+            </a>
+        </nav>
+    </div>
+
+    <footer>
+        <p>2024 夢幻遊戲樂園 | 讓每個女孩都成為自己的主角</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
